@@ -2,17 +2,12 @@
   "manifest_version": 2,
   "name": "ToS Analyzer",
   "version": "1.0.0",
-  "description": "Analyze Terms of Service with GPT",
-  "icons": {
-    "48": "icon48.png",
-    "128": "icon128.png"
-  },
+  "description": "Analyze Terms of Service (ToS) using OpenAI's GPT.",
+  "permissions": ["activeTab"],
   "browser_action": {
-    "default_icon": "icon48.png",
     "default_popup": "popup.html",
     "default_title": "ToS Analyzer"
   },
-  "permissions": ["activeTab"],
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "web_accessible_resources": ["bundle.js"]
+  "icons": {}
 }

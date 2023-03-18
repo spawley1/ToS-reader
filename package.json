@@ -1,0 +1,17 @@
+{
+  "name": "tos-analyzer",
+  "version": "1.0.0",
+  "description": "A browser extension to analyze Terms of Service (ToS) using OpenAI's GPT.",
+  "main": "popup.js",
+  "scripts": {
+    "build": "browserify popup.js -o bundle.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}
