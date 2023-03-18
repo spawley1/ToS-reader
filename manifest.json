@@ -2,12 +2,13 @@
   "manifest_version": 2,
   "name": "ToS Analyzer",
   "version": "1.0.0",
-  "description": "Analyze Terms of Service (ToS) using OpenAI's GPT.",
-  "permissions": ["activeTab"],
+  "description": "A Chrome extension that analyzes Terms of Service and highlights potentially harmful clauses using OpenAI GPT.",
   "browser_action": {
-    "default_popup": "popup.html",
-    "default_title": "ToS Analyzer"
+    "default_popup": "popup.html"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
-  "icons": {}
+  "permissions": [
+    "activeTab",
+    "https://api.openai.com/"
+  ],
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }

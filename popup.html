@@ -1,21 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ToS Analyzer</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>ToS Analyzer</h1>
-    <textarea id="tosText" rows="10" cols="50" placeholder="Paste the Terms of Service text here"></textarea>
-    <br />
-    <button id="submitBtn">Analyze</button>
-    <h2>Results:</h2>
-    <div id="result"></div>
-    <script src="bundle.js"></script>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToS Analyzer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+    }
+    button {
+      margin-top: 10px;
+    }
+    #spinner {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>ToS Analyzer</h1>
+  <p>Paste the Terms of Service text below:</p>
+  <textarea id="tosText" cols="30" rows="10"></textarea>
+  <button id="submitBtn">Analyze</button>
+  <p id="spinner">Processing...</p>
+  <div id="result"></div>
+  <script src="popup.js"></script>
+</body>
 </html>
